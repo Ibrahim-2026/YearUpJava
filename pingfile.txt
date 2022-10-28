@@ -1,0 +1,2 @@
+--- e13678.dscb.akamaiedge.net ping statistics ---
+PING e13678.dscb.akamaiedge.net (23.11.197.159): 56 data bytes
