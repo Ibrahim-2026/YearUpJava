@@ -1,4 +1,5 @@
 package com.yearup.week2.homework;
+import java.util.Objects;
 import java.util.Scanner;
 public class Executor {
     static Scanner sc = new Scanner(System.in);
@@ -66,7 +67,7 @@ public class Executor {
     }
 
 }
-enum planetName{
+enum planetClass {
     MERCURY(0),
     VENUS(0),
     EARTH(1),
@@ -78,9 +79,18 @@ enum planetName{
 
     int moons;
 
-    planetName(int p) {
+    planetClass(int moons) {
+        this.moons = moons;
     }
+    public static int getNumOfMoons(String planet) {
+        int numMoons = 0;
+        for (planetClass p : planetClass.values()) {
 
-
+            if (Objects.equals(planet, String.valueOf(p))) {
+                numMoons = p.moons;
+            }
+        }
+        return numMoons;
+    }
 
 }
