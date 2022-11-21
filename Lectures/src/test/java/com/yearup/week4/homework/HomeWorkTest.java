@@ -6,6 +6,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class HomeWorkTest {
+    private static HomeWork reverse;
+
+    public static void generateTable(int n){
+        for (int i = 1; i <= 10; i++){
+            System.out.println(n + "x" +i+ "=" + n*i);
+        }
+    }
 
     @Test
     public void reverseString_whenEmpty_returnsEmpty(){
@@ -13,6 +20,8 @@ class HomeWorkTest {
         char[] out = HomeWork.reverseString("");
         assertEquals(input, String.valueOf(out));
     }
+
+
     @Test
     public void reverseString_whenNonEmpty_returnsReversed(){
         String input = "Hello";

@@ -50,5 +50,37 @@ public class Executor {
             System.out.println("Thanks. Goodbye!!!");
         }
     }
+    interface CelestialObject{
+        void displayCelestialObject();
+    }
+    public class executor implements CelestialObject {
+        @Override
+        public void displayCelestialObject() {
+            System.out.println("Comet is a celestial object");
+        }
+    }
+    static Scanner milkyWayPlanet = new Scanner(System.in);
+    static solarSystemPlanet solarSystemPlanet = new solarSystemPlanet();
+    public static void planetBelongs(){
+        System.out.println("Your planet belongs to Milky way galaxy");
+    }
+
+}
+enum planetName{
+    MERCURY(0),
+    VENUS(0),
+    EARTH(1),
+    MARS(2),
+    JUPITER(80),
+    SATURN(83),
+    URANUS(27),
+    NEPTUNE(14);
+
+    int moons;
+
+    planetName(int p) {
+    }
+
+
 
 }
