@@ -40,6 +40,9 @@ public class Executor {
             displayArea(planetArea);
             getStar(planet);
             getPos(planet, planetName);
+
+            //int w = planetClass.getNumOfMoons(planetName) ;
+           // System.out.println(w);
     }
         while(doAgain);
         System.out.println("Would you like to use the application again? ");
